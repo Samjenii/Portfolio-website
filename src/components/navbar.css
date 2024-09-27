@@ -1,0 +1,188 @@
+/* Navbar container styling */
+.navbar {
+    background-color: #1a1a1a; /* Darker background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky; /* Sticks to the top when scrolling */
+    top: 0;
+    z-index: 1000; /* Keeps it above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+  }
+  
+  /* Logo styling */
+  .logo {
+    color: #61dafb; /* Light blue */
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 2px; /* Adds space between letters */
+  }
+  
+  /* Nav link container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Adds space between each link */
+  }
+  
+  /* Nav link items */
+  .nav-links li {
+    display: inline;
+  }
+  
+  /* Styling for the links */
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth color transitions */
+    border-radius: 5px; /* Slightly rounded corners */
+  }
+  
+  /* Hover effects for the links */
+  .nav-links a:hover {
+    background-color: #61dafb; /* Blue background when hovered */
+    color: #1a1a1a; /* Dark text color when hovered */
+  }
+  
+  /* Responsive styling for mobile view */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stacks logo and nav on smaller screens */
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Stacks links vertically */
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .nav-links li {
+      text-align: left; /* Aligns text to the left on mobile */
+    }
+  }
+
+  .about-section {
+    padding: 50px;
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .skills-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-category h3 {
+    font-size: 22px;
+    color: #61dafb;
+    margin-bottom: 15px;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-category ul li {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .contact-section {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color: #ffffff; /* White background for contrast */
+    padding: 40px; /* Ample padding */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    margin: 30px 0; /* Margin for spacing */
+    min-height: 300px; /* Minimum height for better vertical centering */
+  }
+  
+  .contact-section h2 {
+    font-size: 32px; /* Larger font for the heading */
+    color: #0a0a0c; /* Darker color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+
+  .contact-card {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Centered content */
+    background-color: #030101; /* Light gray background for card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Maximum width for the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+  }
+
+  .contact-card h3{
+    color: #f4f4f9;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-card p {
+    font-size: 18px; /* Font size for contact info */
+    line-height: 1.6; /* Space between lines */
+    color:  #3498db; /* Darker text color */
+    margin: 5px 0; /* Margin for spacing */
+  }
+  
+  .contact-card a {
+    color: #3498db; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .contact-card a:hover {
+    color: #2980b9; /* Darker color on hover */
+  }
+  
