@@ -8,24 +8,23 @@ const Projects = () => {
       description:
         'A personal portfolio website built using React.js, showcasing my projects, skills, and contact information.',
       technologies: ['React', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/yourprofile/portfolio-website',
-      liveDemo: 'https://yourportfolio.com',
+      githubLink: 'https://github.com/Samjenii/Portfolio-website',
+      
     },
     {
-      title: 'E-commerce Store',
+      title: 'Depression Chatbot',
       description:
-        'An e-commerce website with full functionality including product listing, shopping cart, and payment gateway integration.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      githubLink: 'https://github.com/yourprofile/ecommerce-store',
-      liveDemo: 'https://ecommercestore.com',
+        'A depression chatbot is an AI-powered tool designed to provide emotional support, mental health resources, and coping strategies to individuals struggling with depression or depressive symptoms.',
+      technologies: ['NLTK', 'Node.js', 'OpenAI API', 'Python'],
+      githubLink: 'https://github.com/Samjenii/Depression-Chatbot',
+     
     },
     {
-      title: 'Weather App',
+      title: 'Hospital Management System',
       description:
-        'A weather forecasting app using the OpenWeather API, built with JavaScript to display current weather and 7-day forecast for any city.',
+        'A Hospital Management System (HMS) is a comprehensive, integrated software solution designed to manage and automate various aspects of a hospital’s day-to-day operations. ',
       technologies: ['JavaScript', 'API', 'HTML', 'CSS'],
-      githubLink: 'https://github.com/yourprofile/weather-app',
-      liveDemo: 'https://yourweatherapp.com',
+      
     },
   ];
 
@@ -46,9 +45,7 @@ const Projects = () => {
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                 GitHub Repo
               </a>
-              <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                Live Demo
-              </a>
+             
             </div>
           </div>
         ))}

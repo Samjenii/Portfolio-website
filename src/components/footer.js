@@ -1,17 +1,25 @@
 import React from 'react';
 import './footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-      <p>LinkedIn :<a href="https://www.linkedin.com/in/jenisha-samlin-a33005259/"> jenisha-samlin-a33005259</a></p>
-     
+        <p>
+          <a href="https://www.linkedin.com/in/jenisha-samlin-a33005259/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className="footer-icon" /> LinkedIn
+          </a>
+        </p>
       </div>
 
       <div className="footer-content">
-      <p>GitHub :<a href="https://github.com/Samjenii"> Samjenii</a></p>
-     
+        <p>
+          <a href="https://github.com/Samjenii" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} className="footer-icon" /> GitHub
+          </a>
+        </p>
       </div>
 
       <div className="footer-bottom">
