@@ -9,19 +9,15 @@ const Footer = () => {
       <div className="footer-content">
         <p>
           <a href="https://www.linkedin.com/in/jenisha-samlin-a33005259/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} className="footer-icon" /> LinkedIn
+            <FontAwesomeIcon icon={faLinkedin} className="footer-icon" /> 
           </a>
-        </p>
-      </div>
-
-      <div className="footer-content">
-        <p>
           <a href="https://github.com/Samjenii" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} className="footer-icon" /> GitHub
+            <FontAwesomeIcon icon={faGithub} className="footer-icon" /> 
           </a>
         </p>
       </div>
 
+    
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Samlin's Portfolio.</p>
       </div>

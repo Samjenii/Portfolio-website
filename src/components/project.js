@@ -1,5 +1,7 @@
 import React from 'react';
 import './project.css'; // Make sure to style the section appropriately
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Projects = () => {
   const projectList = [
@@ -9,7 +11,6 @@ const Projects = () => {
         'A personal portfolio website built using React.js, showcasing my projects, skills, and contact information.',
       technologies: ['React', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/Samjenii/Portfolio-website',
-      
     },
     {
       title: 'Depression Chatbot',
@@ -17,14 +18,13 @@ const Projects = () => {
         'A depression chatbot is an AI-powered tool designed to provide emotional support, mental health resources, and coping strategies to individuals struggling with depression or depressive symptoms.',
       technologies: ['NLTK', 'Node.js', 'OpenAI API', 'Python'],
       githubLink: 'https://github.com/Samjenii/Depression-Chatbot',
-     
     },
     {
       title: 'Hospital Management System',
       description:
-        'A Hospital Management System (HMS) is a comprehensive, integrated software solution designed to manage and automate various aspects of a hospital’s day-to-day operations. ',
+        'A Hospital Management System (HMS) is a comprehensive, integrated software solution designed to manage and automate various aspects of a hospital’s day-to-day operations.',
       technologies: ['JavaScript', 'API', 'HTML', 'CSS'],
-      
+      githubLink: 'https://github.com/Samjenii/Hospital-Management-System', // Add the link here
     },
   ];
 
@@ -43,9 +43,8 @@ const Projects = () => {
             </ul>
             <div className="project-links">
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                GitHub Repo
+                <FontAwesomeIcon icon={faGithub} /> {/* GitHub icon */}
               </a>
-             
             </div>
           </div>
         ))}
